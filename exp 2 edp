@@ -1,0 +1,350 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exp 2 : Study of list in Python\n",
+        "sakshi rathi / 25070123129"
+      ],
+      "metadata": {
+        "id": "BHUAxb-Xn4Sk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "list1=['apple','orange','banana']\n",
+        "print(list1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fol0Iit0qNkd",
+        "outputId": "9c30d4ad-a4ec-42e0-fc4a-0c1007c36bb4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'orange', 'banana']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list2=[2,2.5,'Bond',True]\n",
+        "print(list2)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "78LBP2AcqQE3",
+        "outputId": "d6f8f465-8c5b-4d6f-c2ef-367ab5db9aea"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 2.5, 'Bond', True]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list3=['apple','orange','banana','mango','dragonfruit','muskmelon','papaya']\n",
+        "print(list3[2])\n",
+        "print(list3[-5])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gVrk4-NqqSP7",
+        "outputId": "47323af6-0907-4600-d6ed-6ebaa03b7db2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "banana\n",
+            "banana\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list3=['apple','orange','banana','mango','dragonfruit','muskmelon','papaya']\n",
+        "print(list3[2])\n",
+        "print(list3[-5])\n",
+        "print(list3[2:5])\n",
+        "print(list3[:5])\n",
+        "print(list3[2:])\n",
+        "print(len(list3))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ny36_l7eqUVO",
+        "outputId": "95dfba0e-8134-410a-e36c-1b8582ca7a79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "banana\n",
+            "banana\n",
+            "['banana', 'mango', 'dragonfruit']\n",
+            "['apple', 'orange', 'banana', 'mango', 'dragonfruit']\n",
+            "['banana', 'mango', 'dragonfruit', 'muskmelon', 'papaya']\n",
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list4=['apple','orange','cherry']\n",
+        "list4[0] = list4[2]\n",
+        "print(list4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VY6KopIIqWxh",
+        "outputId": "e7ebebb5-cdcb-46a4-c0f5-72f905acfed4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['cherry', 'orange', 'cherry']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list4=['apple','orange','cherry']\n",
+        "list4[0], list4[2] = list4[2], list4[0]\n",
+        "print(list4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A96VZkNtqY5u",
+        "outputId": "d4a95d69-91ae-4490-de8a-62980a37f36c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['cherry', 'orange', 'apple']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list5=['apple','orange','cherry']\n",
+        "list5.append('mango')\n",
+        "print(list5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Oadhztquqa9v",
+        "outputId": "404b781e-9524-4176-f44a-5daebd8e2100"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'orange', 'cherry', 'mango']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list6=['apple','orange','cherry']\n",
+        "list6.insert(1,'mango')\n",
+        "print(list6)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ELPONtlCqdH_",
+        "outputId": "c19cbb0a-d1a7-4022-d646-910b665f258b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'mango', 'orange', 'cherry']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list7=['apple','orange','cherry']\n",
+        "list8=['mango','dragonfruit','muskmelon']\n",
+        "list7.extend(list8)\n",
+        "print(list7)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hlw_M0u9qfN3",
+        "outputId": "1ab7f8a4-6cc9-4288-c2c1-77559a70d61a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'orange', 'cherry', 'mango', 'dragonfruit', 'muskmelon']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list9=['apple','orange','apple','cherry']\n",
+        "print(list9)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nFahbGtDqhJ1",
+        "outputId": "9f784fde-4cb3-4679-d9b7-2703fbcedcbe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['apple', 'orange', 'apple', 'cherry']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks=[78,85,90,66,88]\n",
+        "print(\"Maximum marks is: \",end=''),print(max(marks))\n",
+        "print(\"Minimum marks is: \",end=''),print(min(marks))\n",
+        "print(\"Total of marks is: \",end=''),print(sum(marks))\n",
+        "print(\"Number of students is: \",end=''),print(len(marks))\n",
+        "print(\"Average marks is: \",end=''),print(sum(marks)/len(marks))\n",
+        "print(\"Sort the marks in ascending order: \",end=''),marks.sort()\n",
+        "print(marks)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wL3kPoy_qjV4",
+        "outputId": "c1dc83d1-17b0-49ca-9915-1348441dd9d8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Maximum marks is: 90\n",
+            "Minimum marks is: 66\n",
+            "Total of marks is: 407\n",
+            "Number of students is: 5\n",
+            "Average marks is: 81.4\n",
+            "Sort the marks in ascending order: [66, 78, 85, 88, 90]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Grocery=['Bread','Milk','Eggs','Cereal','Apples']\n",
+        "Grocery.append('Bananas')\n",
+        "print(Grocery)\n",
+        "Grocery.remove('Apples')\n",
+        "print(Grocery)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2PtObh29qlpW",
+        "outputId": "a91624e0-2c46-4f87-d8b9-5040acabb043"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Bread', 'Milk', 'Eggs', 'Cereal', 'Apples', 'Bananas']\n",
+            "['Bread', 'Milk', 'Eggs', 'Cereal', 'Bananas']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
